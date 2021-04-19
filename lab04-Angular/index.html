@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<script src="script.js"></script>
+	<title>Moja strona z nawigacją w Angular</title>
+</head>
+<body ng-controller="mainController">
+	<header>
+		<nav>
+			<div class ="menu">
+				<ul>
+					<li><a href="#">Start</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="#cv">CV</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- tu będzie Główna zawartość -->
+	<div id="main">
+		<div ng-view></div>
+	</div>
+</body>
+</html>
